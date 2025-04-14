@@ -27,7 +27,7 @@ function Login() {
       localStorage.setItem('refreshToken', response.data.refresh)
       console.log(response.data,"=response");
       setIsLoggedIn(true)
-      navigate('/') //navigate to main page after login
+      navigate('/dashboard') //navigate to main page after login
     } catch (error) {
       console.log("Invalid credentials!!");
       setError("Invalid credentials")
