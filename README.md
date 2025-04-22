@@ -49,3 +49,16 @@ This is a full-stack web application built with **Django (Backend)** and **React
 ```bash
 git clone https://github.com/Sachingupta30/stock-prediction-portal.git
 cd stock-prediction-portal
+
+cd backend-drf
+python -m venv env
+source env/bin/activate   # On Windows: env\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+cd frontend-react
+npm install
+npm start
+
+
